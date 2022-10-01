@@ -1,0 +1,130 @@
+:root {
+    --Cream: hsl(30, 38%, 92%);
+    --Dark-cyan: hsl(158, 36%, 37%);
+    --Dark-grayish-blue: hsl(228, 12%, 48%);
+    --Very-dark-blue: hsl(212, 21%, 14%);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--Cream);
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    width: 17rem;
+    height: 26rem;
+    border-top-left-radius: 0.7rem;
+    border-bottom-left-radius: 0.7rem;
+}
+
+.card {
+    width: 17rem;
+    height: 26rem;
+    background-color: white;
+    padding: 0.5rem 1.5rem;
+    border-top-right-radius: 0.7rem;
+    border-bottom-right-radius: 0.7rem;
+}
+
+.attribution {
+    position: absolute;
+    bottom: 5px;
+    width: 100%;
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--Dark-grayish-blue);
+    line-height: 1.3rem;
+}
+
+p.title {
+    letter-spacing: 4px;
+}
+
+h1 {
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    color: var(--Very-dark-blue);
+    line-height: 2rem;
+}
+
+button {
+    background-color: var(--Dark-cyan);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    border: 0px;
+    border-radius: 0.5rem;
+    width: 14rem;
+    height: 3rem;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button svg{
+    margin-right:0.8rem;
+}
+
+.price{
+    margin: 21.44px 0 ;
+    display: flex;
+    align-items: center; 
+    color: var(--Dark-grayish-blue);
+}
+
+.price span{
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    font-size: xx-large;
+    color: var(--Dark-cyan);
+    margin-right: 1.5rem;
+}
+
+@media screen and (max-width: 600px) {
+    main {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    img {
+        width: 21rem;
+        height: 17rem;
+        border-top-left-radius: 0.7rem;
+        border-top-right-radius: 0.7rem;
+        border-bottom-left-radius: 0;
+        object-fit: cover;
+    }
+
+    .card {
+        width: 21rem;
+        height: 24.5rem;
+        background-color: white;
+        padding: 0.5rem 1.5rem;
+        border-bottom-left-radius: 0.7rem;
+        border-bottom-right-radius: 0.7rem;
+        border-top-right-radius: 0;
+    }
+
+    button{
+        width: 100%;
+        height: 3rem;
+    }
+}
